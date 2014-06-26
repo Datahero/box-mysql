@@ -9,7 +9,7 @@ keywords:
 packages :
   - mysql
 script: |
-  sudo apt-get install python-software-properties
+  sudo apt-get install software-properties-common
   sudo add-apt-repository ppa:ondrej/mysql-5.6 -y
   sudo apt-get update -y
   sudo chef-solo -c $WERCKER_SOURCE_DIR/solo.rb -j $WERCKER_SOURCE_DIR/solo.json -l debug
